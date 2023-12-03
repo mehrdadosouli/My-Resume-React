@@ -10,7 +10,7 @@ const Header = () => {
             <div className='flex justify-between items-center'>
                 <span><a href="#">mehrdadosoulisaran@gmail.com</a></span>
                 <div className='flex items-center gap-2'>
-                    <div className='w-10 h-4 border-black border-[3px] rounded-lg relative' onClick={clickHandler}>
+                    <div className='w-14 h-7 border-black border-[3px] p-1 rounded-2xl relative' onClick={clickHandler}>
                         <div ref={spanElem} className='absolute transition-all rounded-lg inline-block w-3 h-3 bg-black top-0 bottom-0 m-auto'></div>
                     </div>
                     <span>Mehrdad Osouli</span>
