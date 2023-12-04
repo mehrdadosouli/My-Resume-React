@@ -22,7 +22,10 @@
 }
 
 @layer components {
-  
+  .container{
+    width: 85%;
+    margin: auto;
+  }
 }
 body {
   font-size: 1.6rem;
