@@ -15,7 +15,7 @@ const TopBody = () => {
     return (
         <>
           <Swiper
-        direction={'vertical'}
+        // direction={'vertical'}
         pagination={{
           clickable: true,
         }}

@@ -22,9 +22,12 @@
 }
 
 @layer components {
-  .container{
+  .container {
     width: 85%;
     margin: auto;
+  }
+  .ltr-dir {
+    direction: ltr;
   }
 }
 body {
