@@ -1,20 +1,13 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-import './topbody.css';
-
-// import required modules
-import { Pagination } from 'swiper/modules';
-
+import React from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { Carousel } from 'react-responsive-carousel';
+import image1 from '../../../photos/image-1.jpg'
+import image2 from '../../../photos/image2.jpg'
+import './TopBody.css'
 const TopBody = () => {
     return (
         <>
-          <Swiper
+          {/* <Swiper
         // direction={'vertical'}
         pagination={{
           clickable: true,
@@ -31,7 +24,21 @@ const TopBody = () => {
         <SwiperSlide>Slide 7</SwiperSlide>
         <SwiperSlide>Slide 8</SwiperSlide>
         <SwiperSlide>Slide 9</SwiperSlide>
-      </Swiper>
+      </Swiper> */}
+     <Carousel>
+                <div className='image'>
+                    <img src={image1}/>
+                    <p className="legend">Legend 1</p>
+                </div>
+                <div className='image'>
+                    <img src={image2} />
+                    <p className="legend">Legend 2</p>
+                </div>
+                <div className='image'>
+                    <img src={image1} />
+                    <p className="legend">Legend 3</p>
+                </div>
+            </Carousel>
         </>
     );
 };
