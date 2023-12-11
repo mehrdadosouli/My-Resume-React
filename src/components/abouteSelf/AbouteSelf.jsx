@@ -38,7 +38,7 @@ export default function AbouteSelf() {
             <div className='flex lg:justify-center lg:items-center md:max-w-[500px] md:pr-24 md:pt-20'>
                 <div className='relative h-fit'>
                     <img className='w-[100%] h-auto z-10' src={image1} alt="" />
-                    <div className='bg-black w-[100%] z-[-10] h-[100%] absolute lg:bottom-[-10px] lg:right-[-12px] md:right-[-6px] md:top-3 top-3 right-[-10px] '></div>
+                    <div className='bg-black w-[100%] z-[-10] h-[100%] absolute lg:bottom-[-10px] lg:right-[-12px] md:right-[-6px] md:top-3 top-3 right-[-10px]'></div>
                 </div>
             </div>
         </div>

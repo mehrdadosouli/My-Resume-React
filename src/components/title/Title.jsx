@@ -1,7 +1,6 @@
 import React from 'react'
 import ArrowBtn from '../arrowBtn/ArrowBtn'
 export default function Title({title,btn}) {
-  console.log(btn);
   return (
     <div className='container flex flex-row-reverse items-center'>
       <div className='ltr-dir'>
