@@ -7,7 +7,7 @@ import image1 from '../../../photos/image-1.jpg'
 export default function AbouteSelf() {
   return (
     <>
-        <div className="container flex md:flex-row flex-col-reverse md:items-start items-center py-16">
+        <div className="container flex md:flex-row flex-col-reverse md:items-start items-center pt-16">
             <div className='md:w-3/4 flex flex-col items-end'>
                 <div className='mt-10 md:mt-0 flex flex-col items-end gap-5'>
                     <h3 className='text-left lg:text-[60px] md:text-[30px] font-MorabbaBold'>Bring passion to</h3>

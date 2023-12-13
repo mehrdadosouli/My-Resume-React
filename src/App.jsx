@@ -5,6 +5,7 @@ import AbouteSelf from './components/abouteSelf/AbouteSelf'
 import LineDecor from './components/lineDecor/LineDecor'
 import Title from './components/title/Title'
 import Experience from './components/experience/Experience'
+import Projects from './components/project/Projects'
 
 
 function App() {
@@ -49,7 +50,16 @@ const [info,setInfo]=useState([{
       })
     }
       </div>
-     
+      <Title title="Experience" btn="false" />
+      <LineDecor />
+      <div className='flex justify-end gap-5 container'>
+     {
+      info.map(item=>{return <Experience info={item} key={item.id}/>
+      })
+    }
+      </div>
+      <Title title="Experience" btn="false" />
+      <Projects />
     </>
   )
 }

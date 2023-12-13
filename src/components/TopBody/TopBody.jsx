@@ -26,17 +26,17 @@ const TopBody = () => {
         <SwiperSlide>Slide 9</SwiperSlide>
       </Swiper> */}
      <Carousel>
-                <div className='image'>
-                    <img src={image1}/>
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div className='image'>
-                    <img src={image2} />
-                    <p className="legend">Legend 2</p>
+                <div className='image flex justify-center'>
+                    <img src={image2}/>
+                    <p className="legend mr-[10%]">Legend 1</p>
                 </div>
                 <div className='image'>
                     <img src={image1} />
-                    <p className="legend">Legend 3</p>
+                    <p className="legend mr-[10%]">Legend 2</p>
+                </div>
+                <div className='image'>
+                    <img src={image2} />
+                    <p className="legend mr-[10%]">Legend 3</p>
                 </div>
             </Carousel>
         </>
