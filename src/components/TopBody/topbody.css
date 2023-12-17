@@ -38,4 +38,34 @@ body {
   height: 100%;
   object-fit: cover;
 }
-=m 
+.anime{
+  border: 3px solid rgb(166, 165, 165);
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  animation: motion 5s ease-in-out;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.animeh{
+  border: 1px solid rgb(191, 191, 191);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  animation: motion 2s ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes motion {
+  0%{
+    scale: 1;
+    opacity: 1;
+  }
+  100%{
+    scale: 1.5;
+    opacity: 0;
+  }
+}
+
+@media screen and (min-width:992px) {
+  
+}

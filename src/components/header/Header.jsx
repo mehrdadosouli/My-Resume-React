@@ -55,7 +55,7 @@ const Header = () => {
                     <span className='w-10 h-1 bg-black inline-block absolute top-3 transition'></span>
                     <span className='w-10 h-1 bg-black inline-block absolute top-6 transition'></span>
                 </div>
-                <span><a className='font-bold text-4xl mr-5' href="#">mehrdadosoulisaran@gmail.com</a></span>
+                
                </div>
                 <div className='flex items-center gap-2'>
                     <div className='w-14 h-7 hover:cursor-pointer border-black border-[3px] p-1 rounded-2xl relative' onClick={clickHandler}>
