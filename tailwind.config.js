@@ -6,7 +6,9 @@ export default {
   theme: {
    
     fontFamily:{'iransans':'iransans','iransansbold':'iransansbold','MorabbaBold':'Morabba-Bold'},
-    extend: {},
+    extend: {
+      
+    },
   },
   plugins: [],
 }

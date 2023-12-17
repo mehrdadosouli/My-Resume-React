@@ -22,15 +22,19 @@
 }
 
 @layer components {
-  .container{
+  .container {
     width: 85%;
     margin: auto;
+  }
+  .ltr-dir {
+    direction: ltr;
   }
 }
 body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: "iransans";
+
 }
 *,
 *::after,
