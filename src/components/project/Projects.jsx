@@ -26,43 +26,37 @@ const reducer=(state,action)=>{
     switch (action.type) {
         case 'All':
             const newState=[...state.galery];
-            console.log(state);
+
             return {
                 ...state,
                 update:newState
             };
         case 'Melodrama':
-            actionElements(state.galery,'Melodrama')
             return {
                 ...state,
                 update:actionElements(state.galery,'Melodrama')
             }
-        case 'Comedy':
-            actionElements(state.galery,'Comedy')     
+        case 'Comedy':  
             return {
                 ...state,
                 update:actionElements(state.galery,'Comedy')
             };
-        case 'Detective':
-            actionElements(state.galery,'Detective')     
+        case 'Detective': 
             return {
                 ...state,
                 update:actionElements(state.galery,'Detective')
             };
-        case 'Actionmovie':
-            actionElements(state.galery,'Actionmovie')     
+        case 'Actionmovie':  
             return {
                 ...state,
                 update:actionElements(state.galery,'Actionmovie')
             };
         case 'Drema':
-            actionElements(state.galery,'Drema')     
             return {
                 ...state,
                 update:actionElements(state.galery,'Drema')
             };
         case 'HistoricalFilm':
-            actionElements(state.galery,'HistoricalFilm')      
             return {
                 ...state,
                 update:actionElements(state.galery,'HistoricalFilm')
