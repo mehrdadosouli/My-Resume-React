@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Header from './components/header/Header'
 import TopBody from './components/TopBody/TopBody'
 import AbouteSelf from './components/abouteSelf/AbouteSelf'
@@ -37,6 +37,22 @@ const [info,setInfo]=useState([{
   text:'Fusce turpis libero, mollis et dui vel, lacinia ultrices dolor',
   id:4
 }])
+
+
+const elem1=useRef(0)
+const elem2=useRef(0)
+useEffect(()=>{
+ window.addEventListener('scroll',(e)=>{
+
+   if(window.scrollY>700){
+     elem1.current.className='fade-in container'
+   }
+    if(window.scrollY>1100){
+        elem2.current.className='fade-in container'
+    }
+    
+ })
+},[])
   return (
     <>
      <Header />
@@ -44,7 +60,7 @@ const [info,setInfo]=useState([{
      <AbouteSelf />
      <Title title="Education" btn="true" />
      <LineDecor />
-    <div className='flex justify-end gap-5 container'>
+    <div className='flex gap-5 container' ref={elem1}>
      {
       info.map(item=>{return <Experience info={item} key={item.id}/>
       })
@@ -52,9 +68,9 @@ const [info,setInfo]=useState([{
       </div>
       <Title title="Experience" btn="false" />
       <LineDecor />
-      <div className='flex justify-end gap-5 container'>
+      <div className='flex gap-5 container' ref={elem2}>
      {
-      info.map(item=>{return <Experience info={item} key={item.id}/>
+      info.map(item=>{return <Experience info={item} key={item.id}  />
       })
     }
       </div>

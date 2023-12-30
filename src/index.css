@@ -25,6 +25,8 @@
   .container {
     width: 85%;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
   }
   .ltr-dir {
     direction: ltr;
@@ -66,3 +68,13 @@ html {
   display: flex;
   gap: 2rem;
 }
+@keyframes animate-fade-up {
+   from { opacity:0;transform: translateY(3rem); }
+    to { opacity:1; } 
+  }
+
+.fade-in {
+  display: flex;
+  animation:animate-fade-up 1s ease-in;
+}
+

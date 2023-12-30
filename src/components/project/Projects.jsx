@@ -4,21 +4,24 @@ import Project_Item from "../project/Project_Item.jsx"
 // import image from '../../photos/image-1.jpg'
 const initial={
     galery:[
-        {name:'Comedy',id:3,src:'../../photos/image3.png'}, 
-        {name:'Comedy',id:4,src:'../../photos/image4.png'},
-        {name:'Comedy',id:5,src:'../../photos/image-1.jpg'},
-        {name:'Detective',id:6,src:'../../photos/image2.jpg'},
-        {name:'Detective',id:7,src:'../../photos/image4.png'},
-        {name:'Melodrama',id:8,src:'../../photos/image3.png'},
-        {name:'Actionmovie',id:9,src:'../../photos/image3.png'},
-        {name:'HistoricalFilm',id:10,src:'../../photos/image-1.jpg'},
-        {name:'Drema',id:11,src:'../../photos/image2.jpg'},
+        {name:'Comedy',id:1,src:'../../photos/image3.png',w:750,h:380,top:0,right:76,display:'none'}, 
+        {name:'Comedy',id:2,src:'../../photos/image4.png',w:292,h:160,top:0,right:42,display:'none'},
+        {name:'Actionmovie',id:3,src:'../../photos/image3.png',w:292,h:160,top:0,right:7,display:'none'},
+        {name:'HistoricalFilm',id:4,src:'../../photos/image-1.jpg',w:292,h:160,top:22,right:42,display:'none'},
+        {name:'Drema',id:5,src:'../../photos/image2.jpg',w:292,h:160,top:22,right:7,display:'none'},
+        {name:'Comedy',id:6,src:'../../photos/image-1.jpg',w:645,h:380,top:45,right:7,display:'none'},
+        {name:'Detective',id:7,src:'../../photos/image2.jpg',w:292,h:160,top:45,right:76,display:'none'},
+        {name:'Detective',id:8,src:'../../photos/image4.png',w:292,h:160,top:45,right:109,display:'none'},
+        {name:'Melodrama',id:9,src:'../../photos/image3.png',w:292,h:160,top:67,right:76,display:'none'},
+        {name:'Melodrama',id:10,src:'../../photos/image-1.jpg',w:292,h:160,top:67,right:109,display:'none'},
     ],
 update:[]}
 const actionElements=(state,name)=>{
    const result= state.filter(item=>{
-         return item.name == name
-     })
+    if(item.name == name){
+        return item
+      }
+    })
      return result
 }
 
