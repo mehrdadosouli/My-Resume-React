@@ -2,7 +2,7 @@ const All=(state)=>{
     return {type:'All',payload:state}
 }
 const Melodrama=(state)=>{
-    return {type:'Melodrama',payload:state}
+    return {type:'Melodrama',payload:0}
 }
 const Comedy=(state)=>{
     return {type:'Comedy',payload:state}

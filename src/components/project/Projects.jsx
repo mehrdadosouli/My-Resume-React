@@ -28,6 +28,7 @@ const actionElements=(state,name)=>{
 const reducer=(state,action)=>{
     switch (action.type) {
         case 'All':
+            console.log(state);
             const newState=[...state.galery];
 
             return {
@@ -35,11 +36,19 @@ const reducer=(state,action)=>{
                 update:newState
             };
         case 'Melodrama':
+           const result= actionElements(state.galery,'Melodrama')
+           result.map(item=>{
+            item.top=action.payload
+           })
             return {
                 ...state,
                 update:actionElements(state.galery,'Melodrama')
             }
         case 'Comedy':  
+        // const result1= actionElements(state.galery,'Melodrama')
+        //    result1.map(item=>{
+        //     item.top=0
+        //    })
             return {
                 ...state,
                 update:actionElements(state.galery,'Comedy')
@@ -80,13 +89,13 @@ export default function Projects() {
     <>
         <div className='flex ltr-dir container'>
             <ul className='flex gap-10 hover:[&>*]:cursor-pointer [&>*]:text-gray-500 hover:[&>*]:text-black [&>*]:transition'>
-                <li onClick={()=>{dispatch(Actionmovie(updateState))}}>Action movie</li>
-                <li onClick={()=>{dispatch(Comedy(updateState))}}>Comedy</li>
-                <li onClick={()=>{dispatch(Detective(updateState))}}>Detective</li>
-                <li onClick={()=>{dispatch(Drema(updateState))}}>Drema</li>
-                <li onClick={()=>{dispatch(HistoricalFilm(updateState))}}>Historical Film</li>
-                <li onClick={()=>{dispatch(Melodrama(updateState))}}>Melodrama</li>
-                <li onClick={()=>{dispatch(All(updateState))}}>All</li>
+                <li onClick={()=>{dispatch(Actionmovie())}}>Action movie</li>
+                <li onClick={()=>{dispatch(Comedy())}}>Comedy</li>
+                <li onClick={()=>{dispatch(Detective())}}>Detective</li>
+                <li onClick={()=>{dispatch(Drema())}}>Drema</li>
+                <li onClick={()=>{dispatch(HistoricalFilm())}}>Historical Film</li>
+                <li onClick={()=>{dispatch(Melodrama())}}>Melodrama</li>
+                <li onClick={()=>{dispatch(All())}}>All</li>
             </ul>
         </div>
         <div className='h-1 bg-gray-200 my-10'>
