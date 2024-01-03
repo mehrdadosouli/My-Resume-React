@@ -6,7 +6,7 @@ import LineDecor from './components/lineDecor/LineDecor'
 import Title from './components/title/Title'
 import Experience from './components/experience/Experience'
 import Projects from './components/project/Projects'
-
+import DigitalDesign from './components/digitalDesign/DigitalDesign'
 
 function App() {
 const [info,setInfo]=useState([{
@@ -76,6 +76,7 @@ useEffect(()=>{
       </div>
       <Title title="Experience" btn="false" />
       <Projects />
+      <DigitalDesign />
     </>
   )
 }

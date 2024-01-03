@@ -26,10 +26,10 @@ const actionElements=(state,name)=>{
 }
 
 const reducer=(state,action)=>{
+    const newState=[...state.galery];
     switch (action.type) {
         case 'All':
             console.log(state);
-            const newState=[...state.galery];
 
             return {
                 ...state,
@@ -98,7 +98,7 @@ export default function Projects() {
                 <li onClick={()=>{dispatch(All())}}>All</li>
             </ul>
         </div>
-        <div className='h-1 bg-gray-200 my-10'>
+        <div className='bg-gray-200 my-10 h-[877px]'>
             <div className='container h-1 relative ltr-dir [&>*]:border-gray-400 [&>*]:border [&>*]:rounded-full [&>*]:absolute [&>*]:bottom-0 [&>*]:top-0 [&>*]:my-auto [&>*]:bg-[#eee]'>
                 <div className='w-7 h-7 left-0 bg-[#eee]'></div>
                 <div className='w-7 h-7 left-16 bg-[#eee]'></div>

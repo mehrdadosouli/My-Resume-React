@@ -31,6 +31,31 @@
   .ltr-dir {
     direction: ltr;
   }
+  .cicrle_self60{
+    border: solid 0.5rem rgb(134, 134, 134);
+    width: 12rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    --mask: 
+      linear-gradient(red, red) padding-box, 
+      conic-gradient(rgb(4, 0, 255) var(--p, 60%), transparent 0%) border-box;
+    -webkit-mask: var(--mask);
+            mask: var(--mask)
+  }
+  .cicrle_self90{
+    border: solid 0.5rem rgb(134, 134, 134);
+    width: 12rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    --mask: 
+      linear-gradient(red, red) padding-box, 
+      conic-gradient(rgb(4, 0, 255) var(--p, 90%), transparent 0%) border-box;
+    -webkit-mask: var(--mask);
+            mask: var(--mask)
+  }
+  .shadow-right{
+    box-shadow: 10px -5px 2px 3px black;
+  }
 }
 body {
   font-size: 1.6rem;
