@@ -7,6 +7,10 @@ import Title from './components/title/Title'
 import Experience from './components/experience/Experience'
 import Projects from './components/project/Projects'
 import DigitalDesign from './components/digitalDesign/DigitalDesign'
+import News from './components/news/News'
+import img1 from '../photos/image-1.jpg'
+import img2 from '../photos/image2.jpg'
+import img3 from '../photos/image3.png'
 
 function App() {
 const [info,setInfo]=useState([{
@@ -77,6 +81,8 @@ useEffect(()=>{
       <Title title="Experience" btn="false" />
       <Projects />
       <DigitalDesign />
+      <Title title="News & Insights" btn="false" />
+      <News title="driving engagement online" images={[img1,img2,img3]}/>
     </>
   )
 }

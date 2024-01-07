@@ -56,12 +56,14 @@
   .shadow-right{
     box-shadow: 10px -5px 2px 3px black;
   }
+  .box:hover{
+    cursor: pointer;
+  }
 }
 body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-family: "iransans";
-
 }
 *,
 *::after,

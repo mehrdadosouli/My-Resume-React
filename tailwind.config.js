@@ -7,7 +7,7 @@ export default {
   
     fontFamily:{'iransans':'iransans','iransansbold':'iransansbold','MorabbaBold':'Morabba-Bold'},
     extend: {
-    
+      
     },
     
   },
